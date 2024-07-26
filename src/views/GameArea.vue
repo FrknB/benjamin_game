@@ -27,12 +27,15 @@
         </div>
       </div> -->
       <div class="gameArea">
+        <div class="title">
+          Meyveyi tahmin et
+        </div>
         <div class="infoBox">
           <div class="scoreBox">
-            <span id="score">Score: {{ score }}</span>
+            <span id="score">Skor: {{ score }}</span>
           </div>
           <div class="totlaScoreBox">
-            <span id="totalScore">Total Score: {{ totlaScore }}</span>
+            <span id="totalScore">Toplam Skor: {{ totlaScore }}</span>
           </div>
           <div class="quessLimit">
             <span>Tahminler: {{ guesses }}</span>
@@ -189,3 +192,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+</style>

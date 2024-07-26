@@ -1,9 +1,9 @@
 <template>
   <form @submit.prevent="handleSubmit">
       <input type="email" required placeholder="E-mail" v-model="email" />
-      <input type="password" required placeholder="Password" v-model="password" />
+      <input type="password" required placeholder="Şifre" v-model="password" />
       <div class="error"> {{ error }} </div>
-      <button class="loginButton">Login</button>
+      <button class="loginButton">Giriş Yap</button>
     </form>
 </template>
 <script>

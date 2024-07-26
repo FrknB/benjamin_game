@@ -1,10 +1,10 @@
 <template>
   <form @submit.prevent="handleSubmit">
-      <input type="text" required placeholder="Display Name" v-model="displayName" />
+      <input type="text" required placeholder="Ad" v-model="displayName" />
       <input type="email" required placeholder="E-mail" v-model="email" />
-      <input type="password" required placeholder="Password" v-model="password" />
+      <input type="password" required placeholder="Şifre" v-model="password" />
       <div class="error"> {{ error }} </div>
-      <button class="signupButton">Signup</button>
+      <button class="signupButton">Kayıt Ol</button>
     </form>
 </template>
 

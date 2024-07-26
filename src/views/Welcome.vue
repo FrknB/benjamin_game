@@ -3,16 +3,16 @@
     <!-- Login ve Signup arasında geçiş yaptık -->
     <div v-if="showLogin">
       <img src="../assets/img/benjamin-text.png" class="logo" alt="">
-      <h2 class="title">Login</h2>
+      <h2 class="title">Giriş Yap</h2>
       <!-- login formda context emit verdik ve burada kullanıyoruz -->
       <LoginForm @login="enterGameArea" />
-      <p>No Account yet? <span class="welcomeSpan" @click="showLogin = false">Sign Up</span></p>
+      <p>Hala hesabın yok mu? <span class="welcomeSpan" @click="showLogin = false">Kayıt Ol</span></p>
     </div>
     <div v-else>
       <img src="../assets/img/benjamin-text.png" class="logo" alt="">
-      <h2>Sign Up</h2>
+      <h2>Kayıt Ol</h2>
       <SignupForm @signup="enterGameArea" />
-      <p>Already registered? <span class="welcomeSpan" @click="showLogin = true">Login</span></p>
+      <p>Zaten kayıtlı mısın? <span class="welcomeSpan" @click="showLogin = true">Giriş Yap</span></p>
     </div>
     <!-- Login ve Signup arasında geçiş yaptık 'yorum kapanışı' -->
   </div>
